@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  app:
+    image: maycon8609/devops4devs-conversao-distancia:v1
+    ports:
+      - "5000:5000"
+    command: ["python", "-m", "flask", "run", "--host=0.0.0.0"]
